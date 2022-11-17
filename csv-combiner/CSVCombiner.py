@@ -67,25 +67,6 @@ class CSVCombiner:
                 print("Parse error")
         return True
 
-    def print(self, inputlist=[]):
-        print('here')
-        flag = False
-        output = 'result.csv'
-        print(len(sys.argv))
-        for i in range(1,len(sys.argv) - 1):
-            if sys.argv[i] == '>':
-                flag = True
-            else:
-                inputlist.append(sys.argv[i])
-
-        if flag == True:
-            output = sys.argv[len(sys.argv) - 1]
-        else:
-            inputlist.append(sys.argv[len(sys.argv) - 1])
-
-        print(inputlist)
-        print(output)
-
 
 
 
